@@ -1,23 +1,41 @@
 <?php
+  if (isset($_POST["submit"])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $human = intval($_POST['human']);
+    $from = 'Demo Contact Form'; 
+    $to = 'seg'; 
+    $subject = $_POST['subject'];
+    
+    $body ="From: $name\n E-Mail: $email\n Message:\n $message";
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
+    
+    if (!$_POST['name']) {
+      $errName = 'Please enter your name';
+    }
+    
+    
+    if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      $errEmail = 'Please enter a valid email address';
+    }
+    
+    
+    if (!$_POST['message']) {
+      $errMessage = 'Please enter your message';
+    }
+    
+    if ($human !== 5) {
+      $errHuman = 'Your anti-spam is incorrect';
+    }
+
+
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+  if (mail ($to, $subject, $body, $from)) {
+    $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
   } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
+    $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
   }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = 'ras733171@gmail.com';
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+}
+  }
 ?>
