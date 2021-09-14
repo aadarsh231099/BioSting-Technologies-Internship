@@ -553,6 +553,12 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+.services .icon-box {
+    max-width: 235px;
+    margin: auto!important;
+    float: none!important;
+}}
 .services .icon-box {
   padding: 30px;
   position: relative;
