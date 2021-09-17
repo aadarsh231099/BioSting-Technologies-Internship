@@ -471,84 +471,7 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-.features {
-  padding-bottom: 40px;
-}
 
-.features .nav-tabs {
-  border: 0;
-}
-
-.features .nav-link {
-  border: 0;
-  padding: 20px;
-  transition: 0.3s;
-  color: #364146;
-  transition: 0.3s ease-in-out;
-  border-radius: 0;
-  border-left: 4px solid #fafbfb;
-}
-
-.features .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
-  color: #576971;
-}
-
-.features .nav-link p {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.features .nav-link:hover {
-  background: #fafbfb;
-}
-
-.features .nav-link:hover h4 {
-  color: #364146;
-}
-
-.features .nav-link.active {
-  border-radius: 0;
-  border: 0;
-  border-left: 4px solid #009cea;
-  background: #fafbfb;
-}
-
-.features .nav-link.active h4 {
-  color: #009cea;
-}
-
-.features .tab-pane.active {
-  -webkit-animation: slide-down 0.5s ease-out;
-  animation: slide-down 0.5s ease-out;
-}
-
-.features .tab-content {
-  text-align: right;
-}
-
-@-webkit-keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 /*--------------------------------------------------------------
 # Services
@@ -633,7 +556,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# gallery
+# Gallery
 --------------------------------------------------------------*/
 .gallery .gallery-item {
   margin-bottom: 30px;
@@ -758,7 +681,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# gallery Details
+# Gallery Details
 --------------------------------------------------------------*/
 .gallery-details {
   padding-top: 40px;
@@ -822,59 +745,10 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
-.cta {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta-bg.jpg") center center;
-  background-size: cover;
-  padding: 80px 0;
-}
 
-.cta h3 {
-  color: #364146;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.cta p {
-  color: #576971;
-}
-
-.cta .cta-btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 4px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #fff;
-  background: #009cea;
-}
-
-.cta .cta-btn:hover {
-  background: #008bd1;
-}
-
-@media (min-width: 1024px) {
-  .cta {
-    background-attachment: fixed;
-  }
-}
-
-@media (min-width: 769px) {
-  .cta .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
 
 /*--------------------------------------------------------------
-# missions
+# Missions
 --------------------------------------------------------------*/
 .missions .mission-item {
   box-sizing: content-box;
@@ -950,7 +824,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# vision
+# Vision
 --------------------------------------------------------------*/
 .vision {
   background: url("../img/vision-bg.jpg") center center no-repeat;
@@ -1053,213 +927,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients .clients-wrap {
-  border-top: 1px solid #eceff0;
-  border-left: 1px solid #eceff0;
-}
-
-.clients .client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #eceff0;
-  border-bottom: 1px solid #eceff0;
-  overflow: hidden;
-  background: #fff;
-  height: 120px;
-  padding: 40px;
-}
-
-.clients .client-logo img {
-  max-width: 50%;
-  filter: grayscale(100);
-}
-
-.clients .client-logo:hover img {
-  filter: none;
-  transform: scale(1.1);
-}
-
-.clients img {
-  transition: all 0.4s ease-in-out;
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #e9ecee;
-}
-
-.pricing h3 {
-  font-weight: 400;
-  padding: 20px 15px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #777777;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #009cea;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #009cea;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  padding: 20px 15px;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: #009cea;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.pricing .featured {
-  background: #009cea;
-  border-color: #009cea;
-}
-
-.pricing .featured h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na {
-  color: #fff;
-}
-
-.pricing .featured .btn-buy {
-  background: #fff;
-  color: #009cea;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #009cea;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq {
-  padding: 60px 0;
-}
-
-.faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li {
-  border-bottom: 1px solid #e3e7e9;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-.faq .faq-list .question {
-  display: block;
-  position: relative;
-  font-family: #009cea;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-left: 25px;
-  cursor: pointer;
-  color: #007ab7;
-  transition: 0.3s;
-}
-
-.faq .faq-list i {
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 25px;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list .collapsed {
-  color: black;
-}
-
-.faq .faq-list .collapsed:hover {
-  color: #009cea;
-}
-
-.faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-
-.faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
-}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1429,40 +1096,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #f4f6f7;
-  min-height: 40px;
-  margin-top: 70px;
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #4c5c63;
-  content: "/";
-}
 
 /*--------------------------------------------------------------
 # Footer
