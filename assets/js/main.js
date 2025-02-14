@@ -231,4 +231,12 @@
     })
   });
 
+  const openInternshipBtn = document.getElementById('intenshipBttn');
+  const modalOverlay = document.getElementById('modal');
+  openInternshipBtn.addEventListener('click', () => {
+      modalOverlay.style.display = 'block';
+  });
+
+
+  
 })()
